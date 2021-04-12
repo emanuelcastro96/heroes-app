@@ -8,7 +8,7 @@ export const HeroCard = ({ id,
     first_appearance,
     characters }) => {
     return (
-        <div className='col-sm-4'>
+        <>
             <div className='card mt-3 h-auto p-3' style={{maxWidth: 540}}>
                 <div className='row g-0'>
                     <div className='col-md-4'>
@@ -29,7 +29,7 @@ export const HeroCard = ({ id,
                     </div>
                 </div>
             </div>
-        </div>
+        </>
 
     )
 }
