@@ -6,6 +6,8 @@ export const LoginScreen = ({ history }) => {
 
     const { dispatch } = useContext(AuthContext);
 
+    const lastPath = localStorage.getItem('lastPath');
+
     const handleLogin = () => {
         
         const action = {
@@ -17,7 +19,7 @@ export const LoginScreen = ({ history }) => {
         
         dispatch(action)
         
-        history.replace('/');
+        history.replace(lastPath);
     }
 
     return (
