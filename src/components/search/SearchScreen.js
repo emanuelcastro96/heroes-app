@@ -34,7 +34,7 @@ export const SearchScreen = ({ history}) => {
                 <div className="col-5">
                     <h4>Search form</h4>
                     <hr />
-                    <form onSubmit={handleSearch}>
+                    <form onSubmit={(e)=>{handleSearch(e)}}>
                         <input
                             type='text'
                             placeholder='Find your hero'
@@ -42,7 +42,7 @@ export const SearchScreen = ({ history}) => {
                             name='searchText'
                             autoComplete='off'
                             value={searchText}
-                            onChange={handleInputChange}
+                            onChange={(e)=>{handleInputChange(e)}} 
                         />
                         <button
                             className='btn mt-2 btn-outline-primary'

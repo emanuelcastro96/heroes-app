@@ -6,7 +6,7 @@ export const HeroCard = ({ id,
     publisher,
     alter_ego,
     first_appearance,
-    characters }) => {
+    characters}) => {
     return (
         <>
             <div className='card mt-3 h-auto p-3' style={{maxWidth: 540}}>
